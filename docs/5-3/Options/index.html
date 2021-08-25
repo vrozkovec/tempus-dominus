@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
-    
-    
+
+
+
+
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -38,7 +38,7 @@
     <script src="../theme/js/base.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
     <script src="../theme/js/tempusdominus-bootstrap-3.js"></script>
-    <script src="../search/main.js"></script> 
+    <script src="../search/main.js"></script>
 </head>
 
 <body>
@@ -64,74 +64,74 @@
         <div class="navbar-collapse collapse">
             <!-- Main navigation -->
             <ul class="nav navbar-nav">
-            
-            
+
+
                 <li >
                     <a href="..">Usage</a>
                 </li>
-            
-            
-            
+
+
+
                 <li >
                     <a href="../Installing/">Installing</a>
                 </li>
-            
-            
-            
+
+
+
                 <li >
                     <a href="../Functions/">Functions</a>
                 </li>
-            
-            
-            
+
+
+
                 <li class="active">
                     <a href="./">Options</a>
                 </li>
-            
-            
-            
+
+
+
                 <li >
                     <a href="../Events/">Events</a>
                 </li>
-            
-            
-            
+
+
+
                 <li >
                     <a href="../ChangeLog/">Change Log</a>
                 </li>
-            
-            
-            
+
+
+
                 <li >
                     <a href="../ContributorsGuide/">Dev Guide</a>
                 </li>
-            
-            
-            
+
+
+
                 <li >
                     <a href="../Extras/">Extras</a>
                 </li>
-            
-            
-            
+
+
+
                 <li >
                     <a href="../FAQ/">FAQs</a>
                 </li>
-            
-            
+
+
             </ul>
 
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
-                
-                
+
+
                 <li>
                     <a href="https://github.com/tempusdominus/bootstrap-3-datetimepicker/">
                         <i class="fa fa-github"></i>
                         GitHub
                     </a>
                 </li>
-                
+
             </ul>
         </div>
     </div>
@@ -189,7 +189,7 @@
                     <strong>Important!</strong>
                     Please read this <a href="https://eonasdan.com/state-of-my-picker" target="_blank">blog post</a>
                 </div>
-                
+
 
 <h2 id="options">Options</h2>
 <div class="alert alert-info">
@@ -498,7 +498,7 @@ Accepts: object with all or some of the parameters above
 <hr />
 <h3 id="widgetpositioning">widgetPositioning</h3>
 <pre><code>Default: {
-            horizontal: 'auto'
+            horizontal: 'auto',
             vertical: 'auto'
          }
 Accepts: object with the all or one of the parameters above
@@ -724,9 +724,9 @@ var parseInputDate = function(inputDate) {
         var relativeDate = inputDate.match(relativeDatePattern),
             parseDate = null;
 
-        if (relativeDate !== null) 
+        if (relativeDate !== null)
           parseDate = this.parseRelativeDate(inputDate.match(relativeDatePattern)[0]);
-        else 
+        else
           parseDate = moment();
 
         resultDate = moment(parseDate, &quot;YYYY-MM-DD&quot;);
